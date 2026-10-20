@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LPS College Dullewala</title>
+<meta name="description" content="LPS College Dullewala: teachers, fees and activities. Ask your questions by voice in Urdu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Source+Sans+3:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { ink: '#16222B', mute: '#55656E', field: '#0F5E4D', fieldDark: '#0A4538', mist: '#EEF3F2', gold: '#E3A21A', line: '#D5DEDC' },
+  fontFamily: { display: ['"Young Serif"', 'serif'], body: ['"Source Sans 3"', 'sans-serif'], urdu: ['"Noto Nastaliq Urdu"', 'serif'] }
+} } };
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body text-ink bg-white antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:p-3 focus:bg-white">Skip to content</a>
+
+<header class="border-b border-line">
+  <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="#" class="font-display text-lg">LPS College Dullewala</a>
+    <nav class="hidden sm:flex gap-6 text-sm text-mute" aria-label="Main">
+      <a class="hover:text-ink" href="#teachers">Teachers</a>
+      <a class="hover:text-ink" href="#fees">Fees</a>
+      <a class="hover:text-ink" href="#activities">Activities</a>
+      <a class="hover:text-ink" href="#assistant">Voice assistant</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="bg-field text-white">
+    <div class="max-w-5xl mx-auto px-5 py-16 sm:py-24 grid md:grid-cols-5 gap-10 items-end">
+      <div class="md:col-span-3">
+        <h1 class="font-display text-4xl sm:text-5xl leading-tight">LPS College, Dullewala</h1>
+        <p class="mt-5 text-lg text-white/85 max-w-prose">Everything a student or parent asks first is on this page: who teaches, what the fees are, and what happens outside the classroom.</p>
+        <a href="#fees" class="inline-block mt-8 bg-gold text-ink font-semibold px-5 py-3 rounded">See the fees</a>
+      </div>
+      <div class="md:col-span-2 border-l-4 border-gold pl-5">
+        <p class="font-semibold">Prefer to ask out loud?</p>
+        <p class="mt-1 text-white/85">Tap the microphone button at the bottom right and speak. The answer comes back in Urdu, in writing and in voice.</p>
+        <p class="font-urdu mt-3 text-lg leading-loose" dir="rtl" lang="ur">مائیک کا بٹن دبائیں اور سوال پوچھیں۔</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="teachers" class="max-w-5xl mx-auto px-5 py-16">
+    <h2 class="font-display text-3xl">Our teachers</h2>
+    <p class="mt-3 text-mute max-w-prose">Four teachers lead the classes at LPS College.</p>
+    <ul class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <li class="border border-line rounded p-5"><span class="block w-10 h-10 rounded-full bg-mist text-field font-semibold grid place-items-center" aria-hidden="true">A</span><p class="mt-4 font-semibold">Sir Ali</p></li>
+      <li class="border border-line rounded p-5"><span class="block w-10 h-10 rounded-full bg-mist text-field font-semibold grid place-items-center" aria-hidden="true">H</span><p class="mt-4 font-semibold">Sir Hassan</p></li>
+      <li class="border border-line rounded p-5"><span class="block w-10 h-10 rounded-full bg-mist text-field font-semibold grid place-items-center" aria-hidden="true">U</span><p class="mt-4 font-semibold">Sir Usman</p></li>
+      <li class="border border-line rounded p-5"><span class="block w-10 h-10 rounded-full bg-mist text-field font-semibold grid place-items-center" aria-hidden="true">A</span><p class="mt-4 font-semibold">Sir Ahssan</p></li>
+    </ul>
+  </section>
+
+  <section id="fees" class="bg-mist">
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h2 class="font-display text-3xl">Fees</h2>
+      <p class="mt-3 text-mute max-w-prose">Fees are charged per year of study.</p>
+      <table class="mt-8 w-full max-w-xl bg-white border border-line text-left">
+        <caption class="sr-only">Fees by year</caption>
+        <thead class="border-b border-line text-mute text-sm"><tr><th scope="col" class="p-4 font-semibold">Year</th><th scope="col" class="p-4 font-semibold text-right">Fee</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-line"><th scope="row" class="p-4 font-normal">First year</th><td class="p-4 text-right text-xl font-semibold">Rs 50,000</td></tr>
+          <tr><th scope="row" class="p-4 font-normal">Second year</th><td class="p-4 text-right text-xl font-semibold">Rs 60,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="activities" class="max-w-5xl mx-auto px-5 py-16">
+    <h2 class="font-display text-3xl">Beyond the classroom</h2>
+    <p class="mt-3 text-mute max-w-prose">Four activities for students outside lectures.</p>
+    <dl class="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-6 max-w-3xl">
+      <div class="border-t-2 border-field pt-3"><dt class="font-semibold text-lg">Sports gala</dt><dd class="text-mute">Inter-class sports competitions.</dd></div>
+      <div class="border-t-2 border-field pt-3"><dt class="font-semibold text-lg">Qawali night</dt><dd class="text-mute">An evening of live qawali.</dd></div>
+      <div class="border-t-2 border-field pt-3"><dt class="font-semibold text-lg">Football</dt><dd class="text-mute">Regular football for students.</dd></div>
+      <div class="border-t-2 border-field pt-3"><dt class="font-semibold text-lg">Vacation trip</dt><dd class="text-mute">A group trip during the break.</dd></div>
+    </dl>
+  </section>
+
+  <section id="assistant" class="bg-ink text-white">
+    <div class="max-w-5xl mx-auto px-5 py-16 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="font-display text-3xl">Ask the voice assistant</h2>
+        <p class="mt-3 text-white/80 max-w-prose">Open the chat at the bottom right, press the record button, ask your question, then press it again to send.</p>
+      </div>
+      <ul class="text-white/90 space-y-2 self-center">
+        <li>“پہلے سال کی فیس کتنی ہے؟”</li>
+        <li>“اساتذہ کے نام کیا ہیں؟”</li>
+        <li>“کالج میں کون سی سرگرمیاں ہوتی ہیں؟”</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line text-sm text-mute"><div class="max-w-5xl mx-auto px-5 py-6">LPS College Dullewala. Student assignment project.</div></footer>
+
+<!-- Voice assistant -->
+<button id="fab" type="button" aria-expanded="false" aria-controls="panel" aria-label="Open voice assistant"
+  class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-gold text-ink shadow-lg grid place-items-center focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-white">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+</button>
+
+<section id="panel" hidden aria-label="Voice assistant"
+  class="fixed z-40 bottom-24 right-3 left-3 sm:left-auto sm:right-5 sm:w-96 bg-white border border-line rounded-lg shadow-2xl flex flex-col max-h-[70vh]">
+  <div class="flex items-center justify-between px-4 py-3 border-b border-line">
+    <p class="font-semibold">Voice assistant</p>
+    <button id="close" type="button" class="text-mute hover:text-ink p-1" aria-label="Close">✕</button>
+  </div>
+  <div id="log" class="flex-1 overflow-y-auto p-4 space-y-3 min-h-[8rem]" aria-live="polite">
+    <p class="font-urdu text-lg leading-loose text-mute" dir="rtl" lang="ur">سلام! ریکارڈ بٹن دبائیں اور اپنا سوال پوچھیں۔</p>
+  </div>
+  <div class="border-t border-line p-4 flex items-center gap-3">
+    <button id="rec" type="button" class="flex-1 bg-field hover:bg-fieldDark text-white font-semibold py-3 rounded focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-field">Record question</button>
+    <p id="status" class="text-sm text-mute w-24" role="status">Ready</p>
+  </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
